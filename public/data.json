@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "JavaScript",
+    "category": "Language",
+    "description": "A versatile programming language primarily used for interactive web development.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": 2,
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "A strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Scalable"
+  },
+  {
+    "id": 3,
+    "name": "React",
+    "category": "Frontend",
+    "description": "A JavaScript library for building user interfaces based on UI components.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": 4,
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "description": "A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Fast"
+  },
+  {
+    "id": 5,
+    "name": "DaisyUI",
+    "category": "Styling",
+    "description": "The most popular component library for Tailwind CSS, adding component class names to Tailwind.",
+    "icon": "https://raw.githubusercontent.com/saadeghi/daisyui/master/src/docs/static/images/daisyui-logo/daisyui-logomark.svg",
+    "rating": 4.6,
+    "difficulty": "Beginner-Friendly",
+    "badge": "UI Components"
+  },
+  {
+    "id": 6,
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "A cross-platform, open-source JavaScript runtime environment that can execute JavaScript code outside a web browser.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  },
+  {
+    "id": 7,
+    "name": "Supabase",
+    "category": "Database",
+    "description": "An open-source Firebase alternative providing all the backend features you need to build a product.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+    "rating": 4.5,
+    "difficulty": "Intermediate",
+    "badge": "Realtime"
+  },
+  {
+    "id": 8,
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A document-oriented NoSQL database program, using JSON-like documents with optional schemas.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    "rating": 4.6,
+    "difficulty": "Intermediate",
+    "badge": "NoSQL"
+  },
+  {
+    "id": 9,
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "A set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    "rating": 4.8,
+    "difficulty": "Advanced",
+    "badge": "Containers"
+  },
+  {
+    "id": 10,
+    "name": "VS Code",
+    "category": "Tools",
+    "description": "A lightweight but powerful source code editor which runs on your desktop.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": 11,
+    "name": "Git",
+    "category": "Tools",
+    "description": "A free and open source distributed version control system designed to handle everything from small to very large projects.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Version Control"
+  },
+  {
+    "id": 12,
+    "name": "Postman",
+    "category": "Tools",
+    "description": "An API platform for building and using APIs, simplifying each step of the API lifecycle.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Testing"
+  }
+]
