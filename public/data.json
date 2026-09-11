@@ -41,13 +41,13 @@
   },
   {
     "id": 5,
-    "name": "DaisyUI",
-    "category": "Styling",
-    "description": "The most popular component library for Tailwind CSS, adding component class names to Tailwind.",
-    "icon": "https://raw.githubusercontent.com/saadeghi/daisyui/master/src/docs/static/images/daisyui-logo/daisyui-logomark.svg",
-    "rating": 4.6,
-    "difficulty": "Beginner-Friendly",
-    "badge": "UI Components"
+    "name": "Next.js",
+    "category": "Framework",
+    "description": "A React framework for production that gives you the best developer experience with all the features you need for production.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Fullstack"
   },
   {
     "id": 6,
@@ -91,13 +91,13 @@
   },
   {
     "id": 10,
-    "name": "VS Code",
-    "category": "Tools",
-    "description": "A lightweight but powerful source code editor which runs on your desktop.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+    "name": "Vercel",
+    "category": "Deployment",
+    "description": "A cloud platform for static sites and Serverless Functions that fits perfectly with your workflow.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Hosting"
   },
   {
     "id": 11,
@@ -111,12 +111,12 @@
   },
   {
     "id": 12,
-    "name": "Postman",
-    "category": "Tools",
-    "description": "An API platform for building and using APIs, simplifying each step of the API lifecycle.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+    "name": "Jest",
+    "category": "Testing",
+    "description": "A delightful JavaScript Testing Framework with a focus on simplicity.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
-    "badge": "Testing"
+    "badge": "QA"
   }
 ]

@@ -1,4 +1,4 @@
-import { use } from "react";
+import { use, useState } from "react";
 import type { Itech } from "../../types";
 import TechCard from "./TechCard";
 import Stack from "./Stack";
@@ -8,6 +8,7 @@ export interface TechsProps {
 }
 
 const Techs = ({techPromise}: TechsProps) => {
+    const[addedTechs, setAddedTechs] = useState<Itech[]>([])
     
     const techs = use(techPromise)
     return (
@@ -17,10 +18,14 @@ const Techs = ({techPromise}: TechsProps) => {
             <p className="text-gray-600 mb-8">Pick one technology per category to build your ideal stack.</p>
             <div className="grid lg:grid-cols-4 gap-8 items-start">
                 <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {techs.map((tech:Itech) => <TechCard key={tech.id} tech={tech} />)}
+                    {techs.map((tech:Itech) => <TechCard 
+                    key={tech.id} 
+                    tech={tech} 
+                    addedTechs={addedTechs}
+                    setAddedTechs={setAddedTechs}/>)}
                 </div>
                 <div className="lg:col-span-1">
-                    <Stack />
+                    <Stack addedTechs={addedTechs} setAddedTechs={setAddedTechs} />
                 </div>
             </div>
         </div>

@@ -1,12 +1,19 @@
+import { useState, type Dispatch, type SetStateAction } from "react";
 import type { Itech } from "../../types";
 
 export interface TechCardProps {
     tech: Itech
+    addedTechs: Itech[]
+    setAddedTechs: Dispatch<SetStateAction<Itech[]>>
 }
 
-const TechCard = ({ tech }: TechCardProps) => {
-    
+const TechCard = ({ tech, addedTechs, setAddedTechs }: TechCardProps) => {
+    const [isAllreadyAdded, setIsAllreadyAdded] = useState<boolean>(false);
+    const handleAddBtn = () => {
+        setIsAllreadyAdded(true);
+        setAddedTechs([...addedTechs, tech]);
 
+    };
     const getBadgeStyle = (techName: string) => {
         switch (techName) {
             case "JavaScript":
@@ -18,37 +25,33 @@ const TechCard = ({ tech }: TechCardProps) => {
                 
             case "TypeScript":
             case "Docker":
-            case "VS Code":
-            case "PostgreSQL":
-                return "bg-blue-50 text-blue-600";
+                return "bg-blue-50 text-blue-700";
                 
             case "Node.js":
             case "MongoDB":
-                return "bg-green-50 text-green-600";
+                return "bg-green-50 text-green-700";
                 
             case "Supabase":
-            case "DaisyUI":
-            case "Vue.js":
                 return "bg-emerald-50 text-emerald-600";
                 
             case "Git":
             case "Postman":
-            case "Svelte":
-                return "bg-orange-50 text-orange-600";
-                
-            case "Redis":
-                return "bg-red-50 text-red-600";
+                return "bg-orange-50 text-orange-700";
                 
             case "Next.js":
+            case "Vercel":
                 return "bg-slate-100 text-slate-700";
                 
             default:
-                // যদি নতুন কোনো টেকনোলজি আসে যার নাম লিস্টে নেই
-                return "bg-slate-50 text-slate-500 border border-slate-100"; 
+                return "bg-rose-50 text-rose-700 border border-slate-100"; 
         }
     };
     return (
-        <div className="p-6 bg-white border border-gray-100 rounded-2xl flex flex-col h-full shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-md transition-shadow">
+        <div 
+            className={`p-6 rounded-2xl flex flex-col h-full shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all duration-300 ${
+            isAllreadyAdded? "border-4 border-transparent [background:linear-gradient(white,white)_padding-box,linear-gradient(to_bottom_right,#EC4899,#a855f7)_border-box] cursor-not-allowed"
+            : "bg-white border border-gray-100 cursor-pointer"}`}
+            >
             <div className="flex justify-between items-start mb-5">
                 <img src={tech.icon} alt={tech.name} className="w-10 h-10 object-contain" />
                 <span className={`px-3 py-1 text-xs font-medium rounded-full ${getBadgeStyle(tech.name)}`}>
@@ -74,8 +77,12 @@ const TechCard = ({ tech }: TechCardProps) => {
                 </span>
             </div>
             <button 
-                className="w-full py-2.5 rounded-xl text-sm font-semibold transition-colors duration-200 bg-gray-900 text-white hover:bg-gray-800"
-            > Add to Stack
+                    onClick={() => handleAddBtn()}
+                    className={`w-full py-2.5 rounded-xl text-sm font-semibold transition-colors duration-200 ${
+                    isAllreadyAdded ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "bg-gray-900 text-white hover:bg-gray-800"
+                    }`}
+                >     
+                    {isAllreadyAdded ? "Added Successfully 🎉" : "Add to Stack"}
             </button>
 
         </div>
