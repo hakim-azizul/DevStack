@@ -8,11 +8,11 @@ export interface TechCardProps {
 }
 
 const TechCard = ({ tech, addedTechs, setAddedTechs }: TechCardProps) => {
-    const [isBtnClicked, setIsBtnClicked] = useState<boolean>(false);
+    const isAdded = addedTechs.some((t) => t.name === tech.name);
     const handleAddBtn = () => {
-        setIsBtnClicked(true);
-        setAddedTechs([...addedTechs, tech]);
-
+        if (!isAdded){
+            setAddedTechs([...addedTechs, tech]);
+        }
     };
     const getBadgeStyle = (techName: string) => {
         switch (techName) {
@@ -49,7 +49,7 @@ const TechCard = ({ tech, addedTechs, setAddedTechs }: TechCardProps) => {
     return (
         <div 
             className={`p-6 rounded-2xl flex flex-col h-full shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all duration-300 ${
-            isBtnClicked? "border-4 border-transparent [background:linear-gradient(white,white)_padding-box,linear-gradient(to_bottom_right,#EC4899,#a855f7)_border-box] cursor-not-allowed"
+            isAdded? "border-4 border-transparent [background:linear-gradient(white,white)_padding-box,linear-gradient(to_bottom_right,#EC4899,#a855f7)_border-box] cursor-not-allowed"
             : "bg-white border border-gray-100 cursor-pointer"}`}
             >
             <div className="flex justify-between items-start mb-5">
@@ -78,12 +78,12 @@ const TechCard = ({ tech, addedTechs, setAddedTechs }: TechCardProps) => {
             </div>
             <button 
                     onClick={() => handleAddBtn()}
-                    disabled={isBtnClicked}
+                    disabled={isAdded}
                     className={`w-full py-2.5 rounded-xl text-sm font-semibold transition-colors duration-200 ${
-                    isBtnClicked ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "bg-gray-900 text-white hover:bg-gray-800"
+                    isAdded ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "bg-gray-900 text-white hover:bg-gray-800"
                     }`}
                 >     
-                    {isBtnClicked ? "Added Successfully 🎉" : "Add to Stack"}
+                    {isAdded ? "Added Successfully 🎉" : "Add to Stack"}
             </button>
 
         </div>
