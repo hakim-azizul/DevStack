@@ -75,7 +75,7 @@ const TechCard = ({ tech }: TechCardProps) => {
             </div>
             <button 
                 className="w-full py-2.5 rounded-xl text-sm font-semibold transition-colors duration-200 bg-gray-900 text-white hover:bg-gray-800"
-            >
+            > Add to Stack
             </button>
 
         </div>
