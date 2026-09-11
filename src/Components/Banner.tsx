@@ -1,9 +1,6 @@
 import banner from "../assets/banner-stack.png"
-export interface BannerProps {
-    prop: string
-}
 
-const Banner = ({ prop }: BannerProps) => {
+const Banner = () => {
     
     return (
         <div className="container mx-auto py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10 lg:gap-20">

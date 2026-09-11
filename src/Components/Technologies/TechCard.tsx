@@ -1,5 +1,6 @@
-import { useState, type Dispatch, type SetStateAction } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 import type { Itech } from "../../types";
+import { toast } from "react-toastify";
 
 export interface TechCardProps {
     tech: Itech
@@ -12,6 +13,7 @@ const TechCard = ({ tech, addedTechs, setAddedTechs }: TechCardProps) => {
     const handleAddBtn = () => {
         if (!isAdded){
             setAddedTechs([...addedTechs, tech]);
+            toast.success(`${tech.name} added to stack Successfully! 🎉`);
         }
     };
     const getBadgeStyle = (techName: string) => {
