@@ -14,7 +14,7 @@ const Nav = () => {
                 </div>
                 <div className="flex-1 flex justify-center md:flex-none md:justify-start">
                     <a href="/">
-                        <img src={Logo} alt="DevStack Logo" className="h-6 md:h-7 object-contain" />
+                        <img src={Logo} alt="DevStack Logo" className="h-6 md:h-auto object-contain" />
                     </a>
                 </div>
                 <div className="hidden md:flex flex-1 justify-center">

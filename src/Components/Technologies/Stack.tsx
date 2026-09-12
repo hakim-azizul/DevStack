@@ -43,8 +43,6 @@ const Stack = ({ addedTechs, setAddedTechs }: StackProps) => {
                         Remove All
                     </button>
                 </div>
-                
-
             )}
         </div>
     )

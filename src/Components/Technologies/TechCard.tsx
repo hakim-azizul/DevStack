@@ -51,7 +51,7 @@ const TechCard = ({ tech, addedTechs, setAddedTechs }: TechCardProps) => {
     return (
         <div 
             className={`p-6 rounded-2xl flex flex-col h-full shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all duration-300 ${
-            isAdded? "border-4 border-transparent [background:linear-gradient(white,white)_padding-box,linear-gradient(to_bottom_right,#EC4899,#a855f7)_border-box] cursor-not-allowed"
+            isAdded? "border-4 border-transparent [background:linear-gradient(white,white)_padding-box,linear-gradient(to_bottom_right,#EC4899,#a855f7)_border-box] shadow-[0_0_15px] shadow-purple-500/20 cursor-not-allowed"
             : "bg-white border border-gray-100 cursor-pointer"}`}
             >
             <div className="flex justify-between items-start mb-5">
