@@ -6,6 +6,7 @@ import type { Itech } from './types';
 import Techs from './Components/Technologies/Techs';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Footer } from './Components/Footer';
 
 const Loading = () => {
   return (
@@ -38,7 +39,8 @@ function App() {
       <Banner />
       <Suspense fallback={<Loading />}>
         <Techs techPromise={techPromise}/>
-      </Suspense>       
+      </Suspense>
+      <Footer />       
       <ToastContainer position="bottom-right" autoClose={2000} theme='colored'/>     
     </div>
   )

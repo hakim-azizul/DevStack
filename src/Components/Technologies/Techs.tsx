@@ -12,7 +12,7 @@ const Techs = ({techPromise}: TechsProps) => {
     const techs = use(techPromise)
     return (
         <>
-        <div className="container mx-auto py-10 px-4">
+        <div id="tech-section" className="container mx-auto py-10 scroll-mt-12">
             <h1 className="text-3xl font-bold text-gray-900 mb-2">Explore the <span className="text-transparent bg-clip-text bg-linear-to-r from-[#EC4899] to-[#8B5CF6]">Technologies</span></h1>
             <p className="text-gray-600 mb-8">Pick one technology per category to build your ideal stack.</p>
             <div className="grid lg:grid-cols-4 gap-8 items-start">

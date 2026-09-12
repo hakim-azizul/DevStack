@@ -3,7 +3,7 @@ import banner from "../assets/banner-stack.png"
 const Banner = () => {
     
     return (
-        <div className="container mx-auto py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10 lg:gap-20">
+        <div className="container mx-auto px-4 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10 lg:gap-20">
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">Build Your Ideal <br/> 
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-600 to-purple-500">Development Stack</span></h1>
@@ -13,7 +13,7 @@ const Banner = () => {
                 </p>
             
                 <div className="flex flex-wrap justify-center md:justify-start gap-4">
-                <button className="btn btn-secondary rounded-lg bg-linear-to-r from-[#F97316] to-[#EC4899] px-6">Explore Technologies</button>
+                <button onClick={()=>{document.getElementById('tech-section')?.scrollIntoView({ behavior: 'smooth' })}} className="btn btn-secondary rounded-lg bg-linear-to-r from-[#F97316] to-[#EC4899] px-6">Explore Technologies</button>
                 <button className="btn btn-outline border-[#E5E7EB] rounded-lg px-14">Learn More</button>
                 </div>
             </div>
