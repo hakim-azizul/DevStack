@@ -14,7 +14,7 @@ export function Footer() {
                             <li className="hover:text-purple-600 cursor-pointer transition-colors">LinkedIn</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="hidden md:block">
                         <h4 className="font-bold text-slate-900 mb-4 tracking-wide text-sm">PRODUCT</h4>
                         <ul className="space-y-3 text-sm text-slate-500">
                             <li>Home</li>
@@ -22,7 +22,7 @@ export function Footer() {
                             <li>Projects</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="hidden md:block">
                         <h4 className="font-bold text-slate-900 mb-4 tracking-wide text-sm">COMPANY</h4>
                         <ul className="space-y-3 text-sm text-slate-500">
                             <li className="hover:text-purple-600 cursor-pointer transition-colors">About</li>
@@ -30,7 +30,7 @@ export function Footer() {
                             <li className="hover:text-purple-600 cursor-pointer transition-colors">Careers</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="hidden md:block">
                         <h4 className="font-bold text-slate-900 mb-4 tracking-wide text-sm">LEGAL</h4>
                         <ul className="space-y-3 text-sm text-slate-500">
                             <li className="hover:text-purple-600 cursor-pointer transition-colors">Privacy Policy</li>

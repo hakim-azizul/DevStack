@@ -3,12 +3,12 @@ import banner from "../assets/banner-stack.png"
 const Banner = () => {
     
     return (
-        <div className="container mx-auto px-4 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10 lg:gap-20">
+        <div className="container mx-auto px-4 pt-12 md:pt-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10 lg:gap-20">
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">Build Your Ideal <br/> 
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold md:font-extrabold leading-tight">Build Your Ideal <br/> 
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-600 to-purple-500">Development Stack</span></h1>
 
-                <p className="my-6 text-[#475569] text-sm md:text-lg max-w-xl">
+                <p className="my-6 text-[#475569] text-lg max-w-xl">
                 Explore frontend, backend, database, and tooling options, compare them side by side, and put together the stack that fits your next project.
                 </p>
             
@@ -18,7 +18,7 @@ const Banner = () => {
                 </div>
             </div>
             <div className="flex justify-center md:justify-end">
-                <img src={banner} alt="Banner Stack" className="w-full max-w-xs md:max-w-md lg:max-w-lg object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300" />
+                <img src={banner} alt="Banner Stack" className="w-full md:max-w-md lg:max-w-lg object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300" />
             </div>
         </div>
     )
